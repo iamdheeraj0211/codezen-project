@@ -1,0 +1,10 @@
+celery -A productproject beat --loglevel=info
+
+
+celery -A productproject worker --loglevel=info
+
+celery -A productproject worker --loglevel=debug
+
+celery -A productproject flower --loglevel=info
+
+cd productproject
